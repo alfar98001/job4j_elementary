@@ -7,10 +7,12 @@ public class MathCalculator {
         return sum(first, second)
                 + multiply(first, second);
     }
+
     public static double sumRazDel(double first, double second) {
         return raz(first, second)
                 + del(first, second);
     }
+
     public static double sumAll(double first, double second) {
         return sum(first, second)
                 + multiply(first, second)
