@@ -15,7 +15,7 @@ public class PrimeNumber {
 
         public static int calc(int finish) {
             int count = 0;
-            for (int i = 2; i <= finish; i++) { // Начинаем с 2, т.к. 1 не является простым числом
+            for (int i = 2; i <= finish; i++) {
                 if (check(i)) {
                     count++;
                 }
