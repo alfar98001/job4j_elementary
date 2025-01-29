@@ -8,18 +8,17 @@ public class SimpleStringEncoder {
 
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
-                counter++; // Увеличиваем счётчик, если символ повторяется
+                counter++;
             } else {
-                result += symbol; // Добавляем символ в результат
+                result += symbol;
                 if (counter > 1) {
-                    result += counter; // Если было повторение, добавляем число
+                    result += counter;
                 }
-                symbol = input.charAt(i); // Обновляем текущий символ
-                counter = 1; // Сбрасываем счётчик
+                symbol = input.charAt(i);
+                counter = 1;
             }
         }
 
-        // Добавляем последний символ и его счётчик (если >1)
         result += symbol;
         if (counter > 1) {
             result += counter;
