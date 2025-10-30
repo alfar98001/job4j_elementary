@@ -11,10 +11,7 @@ public class Board {
                     } else {
                         System.out.print(" ");
                     }
-                    /* печатаем X - width раз. */
-
                 }
-                /* добавляем перевод на новую строку. */
                 System.out.println();
             }
     }
